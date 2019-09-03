@@ -1,2 +1,3 @@
-const sum = require('./demo.ts');
-console.log(sum(1,3));
+import { Kata} from './solution';
+
+console.log(Kata.revrot("122222",2));

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bottomBtn">回到底部</button>
+    <div id="wrapper">
+        <!-- <div class="anchor-top"></div> -->
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <div>222</div>
+        <!-- <div class="anchor-bottom"></div> -->
+        <button id="topBtn">回到顶部</button>
+    </div>
+</body>
+</html>
+<script>
+let oWrapper = document.getElementById('wrapper');
+// oWrapper.scrollIntoView();
+// oWrapper.scrollIntoView(false);
+// oWrapper.scrollIntoView({block: "end"});
+document.getElementById("bottomBtn").onclick=()=>{
+    console.log("bottom")
+    oWrapper.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+}
+document.getElementById("topBtn").onclick=()=>{
+    console.log("top")
+    oWrapper.scrollIntoView({behavior: "smooth", block: "top", inline: "nearest"});
+// oWrapper.scrollIntoView(true);
+}
+</script>
